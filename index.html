@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Intro to Bootstrap</title>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-dark text-white text-center">
+        <p>Welcome to</p> 
+        <h1>Harvy Cosmiano's Bootstrap Page</h1>
+        <p>Get to know me more!</p> 
+      </div>
+
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img 
+        src="images/graphic_design.jpeg" 
+        alt="Graphic Design" 
+        class="d-block" 
+        style="width:100%"
+        height="600px"
+        >
+      </div>
+      <div class="carousel-item">
+        <img 
+        src="images/content_creation.jpeg" 
+        alt="Content Creation" 
+        class="d-block" 
+        style="width:100%"
+        height="600px"
+        >
+      </div>
+      <div class="carousel-item">
+        <img 
+        src="images/ui:ux_developer.jpeg" 
+        alt="New York" 
+        class="d-block" 
+        style="width:100%"
+        height="600px"
+        >
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Graphic Design</h3>
+            <p>Graphic Design refers to the art and practice of creating visual content, including images, layouts, and typography, to convey information, evoke emotions, and capture attention. It involves the combination of creativity, technical skills, and problem-solving abilities to design engaging and effective visual materials for various purposes, such as advertising, branding, packaging, websites, and multimedia presentations. Graphic designers work with a range of tools, including software, illustration, photography, and digital art, to create compelling visuals that communicate a specific message or idea.</p>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Content Creation</h3>
+            <p>Content creation description refers to the process of developing and producing various forms of media, such as articles, videos, podcasts, graphics, or social media posts. It involves conceptualizing, researching, writing, designing, and distributing content that aims to engage, inform, or entertain an audience. The goal of content creation is to communicate ideas, share knowledge, or promote a brand, while also building a connection with the target audience. Effective content creation requires creativity, attention to detail, and an understanding of the target audience's preferences and needs.</p>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h3>UI/UX Development</h3>        
+            <p>UI/UX, or User Interface (UI) and User Experience (UX), are essential aspects of designing digital products like websites and mobile applications. The UI refers to the visual design and layout of a product, including elements such as buttons, menus, and typography. It's the part of the product that users interact with directly. On the other hand, UX focuses on the overall experience a user has when interacting with the product, encompassing aspects like ease of use, accessibility, and the user's emotional response.
+
+                In simpler terms, UI is like the face of a product, while UX is how the product makes users feel when they interact with it.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="container mt-3">
+
+                <div class="card" style="width:400px">
+                  <img class="card-img-top" src="images/little_mischief.jpeg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Little Mischief</h4>
+                    <p class="card-text">Little Mischief Hirono refers to a character who is playful, curious, and full of energy. Hirono seems to be a young individual with a mischievous spirit, always seeking new adventures and experiences. They possess a charming and witty personality, often using their intellect to navigate through various situations. Despite their mischievous nature, Little Mischief Hirono has a kind heart and genuinely cares for those around them.</p>
+                    <div class="container mt-3">
+
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                          See Profile
+                        </button>
+                      </div>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              Modal body..
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                </div>
+                <br>
+                <hr>
+                
+                <div class="card" style="width:400px">
+                  <div class="card-body">
+                    <h4 class="card-title">Maika</h4>
+                    <p class="card-text">Maika Sakuranomiya (桜ノ宮 苺香 Sakuranomiya Maika) is a 16-year-old girl who despite having a positive and cheerful personality, unintentionally gains a sadistic look in her eyes whenever she smiles.</p>
+                    <div class="container mt-3">
+ 
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                          See Profile
+                        </button>
+                      </div>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              Modal body..
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  <img class="card-img-bottom" src="images/maika.jpeg" alt="Card image" style="width:100%">
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="container mt-3">
+
+                <div class="card" style="width:400px">
+                  <img class="card-img-top" src="images/dreaming_hirono.jpeg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Secret Dreaming</h4>
+                    <p class="card-text">"Hirono The Other One Secret - Dreaming" as a potential title or concept for a creative work, possibly a song, story, or artwork. Due to limited context, a precise description is challenging. However, it explains that "dreaming" refers to experiences during sleep, influenced by daily life, thoughts, and feelings. Dreams have various interpretations, symbolizing imagination, aspirations, personal growth, and self-discovery.</p>
+                    <div class="container mt-3">
+
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                          See Profile
+                        </button>
+                      </div>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              Modal body..
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                </div>
+                <br>
+                <hr>
+                
+                <div class="card" style="width:400px">
+                  <div class="card-body">
+                    <h4 class="card-title">Sawako</h4>
+                    <p class="card-text">Sawako Kuronuma (黒沼 爽子 Kuronuma Sawako) is a kind and honest, desperately wanting to make human connections. She is extremely hardworking and responsible, ranked 3rd in her high school class.</p>
+                    <div class="container mt-3">
+
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                          See Profile
+                        </button>
+                      </div>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              Modal body..
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  <img class="card-img-bottom" src="images/sawako.jpeg" alt="Card image" style="width:100%">
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="container mt-3">
+
+                <div class="card" style="width:400px">
+                  <img class="card-img-top" src="images/prison_hirono.jpeg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Mime Prisoner</h4>
+                    <p class="card-text">Hirono Mime Prisoner is a compelling and thought-provoking character that embodies the spirit of artistic freedom and the power of nonverbal communication. Despite their circumstances, the Mime Prisoner maintains an air of dignity and resilience, inspiring hope in those who witness their performances. Their vibrant appearance and captivating performances make them an unforgettable presence in the world.</p>
+                    <div class="container mt-3">
+
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                          See Profile
+                        </button>
+                      </div>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              Modal body..
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                </div>
+                <br>
+                <hr>
+                
+                <div class="card" style="width:400px">
+                  <div class="card-body">
+                    <h4 class="card-title">Mio</h4>
+                    <p class="card-text">Mio Naganohara (長野原 みお, Naganohara Mio) is a bright and cheerful girl sporting light blue hair and pigtails held by two small wooden cubes. She has a very short temper and is often prone to tantrums. </p>
+                    <div class="container mt-3">
+
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                          See Profile
+                        </button>
+                      </div>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              Modal body..
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  <img class="card-img-bottom" src="images/mio.jpeg" alt="Card image" style="width:100%">
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="https://web.facebook.com/popmartglobal/?_rdc=1&_rdr"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="https://twitter.com/POPMARTGlobal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="https://www.google.com/search?q=popmart+google&rlz=1C5CHFA_enPH978PH978&oq=popmart+google&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIGCAcQRRg80gEIMjc5N2owajSoAgCwAgA&sourceid=chrome&ie=UTF-8"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="https://www.instagram.com/popmartglobal/"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/company/pop-mart"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-body" href="https://mdbootstrap.com/">www.harvycosmiano.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
